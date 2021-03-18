@@ -1,38 +1,25 @@
-.App {
-  text-align: center;
-}
+*:focus{outline:none;}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.flex{display:flex;align-items:center;}
+.w50{width:50%;}
+.tc{text-align:center;}
+.pr{position: relative}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.product img{width:300px;}
+.product .simg{width:50px;border:2px solid transparent;margin-right:10px;border-radius:8px;cursor: pointer;}
+.product .simg.active{border:2px solid #f66;}
+.product .simg:hover{border:2px dashed #ccc;}
+.product .btn{padding:12px 20px;border:none;margin-right:10px;border-radius:8px;cursor:pointer;}
+.product .btn.active{background-color:#f66;color:#fff;}
+.product .btn:not(.active):hover{background-color:#faa;color:#fff;}
+.btn.buy{background-color:#08f;color:#fff;margin-top:50px;}
 
-.App-link {
-  color: #61dafb;
-}
+.product .time,
+.product .heart{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:30px;color:#fff;}
+.product .heart{color:#f44;animation:  beating 1s infinite linear;font-size:60px;left:calc(50% - 23px);top:calc(50% - 40px);}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes beating{
+    0%,60%,100%{transform:scale(1);}
+    30%{transform:scale(1.2);}
 }
