@@ -1,0 +1,11 @@
+
+.form{
+     border:1px solid #ddd;
+     padding:30px;
+     margin:50px auto;
+     max-width:400px;
+}
+
+.form input{
+    padding:10px;
+}

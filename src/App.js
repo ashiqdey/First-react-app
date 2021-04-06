@@ -3,6 +3,8 @@ import './App.css';
 
 import Blogcard from './Blogcard';
 import Product from './Product';
+import Formcomponent from './Formcomponent/Formcomponent';
+
 import {isArrEmpty,log} from './Utils';
 
 class App extends Component {
@@ -62,6 +64,9 @@ class App extends Component {
         <button onClick={this.hideButton}>hide blogs</button>
         {this.state.show? this.blogElement:null}
         <Product curImage={this.state.curImage} feature={this.state.feature} selectImage={this.selectImage} featureChange={this.featureChange} />
+
+        <Formcomponent />
+      
       </div>
     );
   }
